@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webtest101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Kritesh Thapa, Kritesh Portfolio, Kritesh, Portfolio">
+    <meta name="description" content="Yes!!! This is my personal portfolio build by my self.">
+    <meta name="author" content="Kritesh Thapa">
+    <script src="https://kit.fontawesome.com/5045e83b56.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+      *{box-sizing:border-box;margin:0;padding:0;font-size:15px;color:#000;}
+      *:focus{outline:none;}
+      .mainbody{height:auto;width:100%;background-color:#eae5e5}
+      .border{border:1px solid #000;}
+      .borderx{border:0px solid #000;}
+      .borderr{border:1px solid #f00;}
+      .borderg{border:1px solid #0f0;}
+      .borderb{border:1px solid #00f;}
+      .bordery{border:1px solid #ff0;}
+      .borderp{border:1px solid #f0f;}
+      .borderc{border:1px solid #0ff;}
+      .border0{border:1px solid #fff;}
+      .abs{position:absolute;}
+      .ins{height:100%;width:100%;}
+      .inr{height:100%;width:100%;position:relative;}
+      .rel{position:relative;}
+      .inr0{border:1px solid #f00;height:100%;width:100%;position:relative;}
+      :root{
+        --color-grey:#4d4d4d;--fontfamily00:'Noticia Text',serif;--fontfamily01:'Open Sans',sans-serif;
+        --borderx:0px solid #000; --border0:1px solid #000;
+        --borderr:1px solid #f00;--borderg:1px solid #0f0;--borderb:1px solid #00f;--bordery:1px solid #ff0;
+        --borderp:1px solid #f0f;--borderc:1px solid #0ff;--borderw:1px solid #fff;
+      }
+      
+      .pages{height:100%;width:100%;}
+      /* |_____|_____|_____|_____| PAGE ONE HIDDEN NAV BAR |_____|_____|_____|_____| */
+      .responsnav{height:100%;width:100%;position:fixed;z-index:10;background-color:rgba(77, 77, 77,1);display:none;}
+      .mtimes{float:left;width:100%;padding:85px 6% 0 0;text-align:right;margin-bottom:50px;}
+      .fatimes0{background-color:var(--color-grey);color:#fff;padding:5px 12px;border-radius:5px;font-size:35px;}
+      /* |_____|_____|_____|_____| PAGE ONE ROOM ONE |_____|_____|_____|_____| */
+      .p1rooms{width:62%;margin-left:19%;display:inline-block;}
+      .title{font-family:var(--fontfamily00);font-size:43px;font-weight:600;color:#4d4d4d;display:inline-block;float:left;
+        padding:60px 0;}
+      .title span{color:#4d4d4d;font-size:18px;}
+      .navbox{padding:110px 0 0 40px;display:inline-block;float:left;}
+      .navul{list-style:none;display:inline-block;}
+      .liis{display: inline;display:inline-block;}
+      .ahrs{text-decoration:none;font-family:var(--fontfamily00);color:#6d6d6d;padding:10px;display:inline-block;
+        ;transition:.3s;font-size:16px;}
+      .ahrs:hover{cursor: pointer;color:#61d0d4;}
+      .mfabars{float:left;padding-top:85px;display:none;right:6%;}
+      .fabars0{background-color:var(--color-grey);color:#fff;padding:5px 8px;border-radius:5px;font-size:35px;}
+      
+      /* |_____|_____|_____|_____| PAGE ONE ROOM Two |_____|_____|_____|_____| */
+      .p1room2{width:68%;margin-left:16%;display:inline-block;padding:60px 0 50px 0;}
+      
+
+
+      /* |_____|_____|_____|_____| PAGE ONE ROOM Three |_____|_____|_____|_____| */
+      .p1room3{width:100%;margin-left:0;background-color:#e83556;}
+      .inrfooter{width:68%;margin-left:16%;height:100%;padding:40px 0;}
+      .footps{height:100%;width:24%;display:inline-block;}
+      .footp2{width:29%;}
+      .footp3{width:20%;}
+      .footp4{width:25%;}
+      .footericon{background-color:#61d0d4;color:#e83556;font-size:28px;padding:10px;border-radius:50%;}
+      .footps span{color:#fff;font-family:var(--fontfamily01);font-size:12px;padding:5px 15px}
+      .iconlink{text-decoration:none;}
+      .inriconlink{color:#fff;font-size:18px;padding:0 3px;}
+      .inriconlink:hover{color:#61d0d4;}
+      
+      @media only screen and (max-width:1050px){
+        /* |=====|=====|=====| Page 1 Room 1 |=====|=====|=====| */
+        .p1room1{width:78%;margin-left:11%;}
+        /* |=====|=====|=====| Page 1 Room 2 |=====|=====|=====| */
+        .p1room2{width:88%;margin-left:6%;}
+
+        /* |=====|=====|=====| Page 1 Room 3 |=====|=====|=====| */
+        .inrfooter{width:88%;margin-left:6%;}
+      }
+      @media only screen and (max-width:800px){
+        /* |=====|=====|=====| Page 1 Room 1 |=====|=====|=====| */
+        .title{font-size:39px;}
+        .navbox{padding:110px 0 0 20px;}
+        /* |=====|=====|=====| Page 1 Room 2 |=====|=====|=====| */
+        
+        /* |=====|=====|=====| Page 1 Room 3 |=====|=====|=====| */
+        .footps{width:49%;}
+        .footps:nth-child(1){margin-bottom:20px;}
+        .footps:nth-child(2){margin-bottom:20px;}
+      }
+      @media only screen and (max-width:420px){
+        /* |=====|=====|=====| Page 1 Room 1 |=====|=====|=====| */
+        .p1room1{width:100%;margin:0;padding-left:6%;}
+        .navbox{display:none;}
+        .navul{width:100%;}
+        .liis{width:100%;text-align:center;}
+        .liis span{height:1px;width:60%;background-color:#fff;bottom:0;left:20%}
+        .ahrs{color:#fff;padding:15px;font-size:18px;}
+        .ahrs:hover{color:#e83556;}
+        .mfabars{display:block;}
+        /* |=====|=====|=====| Page 1 Room 2 |=====|=====|=====| */
+        .p1room2{width:90%;margin-left:5%;padding:0 0 50px 0;}
+
+        /* |=====|=====|=====| Page 1 Room 3 |=====|=====|=====| */
+        .footps{width:100%;}
+        .footps:nth-child(3){margin-bottom:20px;}
+      }
+      @media only screen and (max-width:375px){
+        /* |=====|=====|=====| Page 1 Room 2 |=====|=====|=====| */
+        .p1room2{width:94%;margin-left:3%;}
+
+      }
+      @media only screen and (max-width:365px){
+      }
+      .lines{height:1px;width:100%;background-color:#000;left:0;display:none;}
+      .line1{top:120px;}
+      .line2{top:145px;}
+    </style>
+  </head>
+  <body>
+    <div class = "mainbody">
+      <div class = "responsnav">
+        <div class = "mtimes"><!--== Responsive Nav Fa Times =========-->
+          <i class = "fas fa-times fatimes0" onclick = "clickbars()"></i>
+        </div>
+        <ul class = "navul"><!--== Responsive Nav Unorder List =========-->
+          <li class = "liis rel"><span class = "abs"></span><a href = "#" class = "ahrs">Home</a></li>
+          <li class = "liis rel"><span class = "abs"></span><a href = "#" class = "ahrs">Resume</a></li>
+          <li class = "liis rel"><span class = "abs"></span><a href = "#" class = "ahrs">Project</a></li>
+          <li class = "liis"><a href = "#" class = "ahrs">Contact</a></li>
+        </ul>
+      </div>
+      <div class = "page1 pages rel">
+        <span class = "line1 lines abs"></span>
+        <span class = "line2 lines abs"></span>
+        <div class = "p1room1 p1rooms rel"><!-- /////=====/////====///// Room 01 /////=====/////====///// -->
+          <div class = "title rel"><!-- ========== Nav Title ========== -->
+            Kritesh Thapa<br/>
+            <span class = "abs">Web Developer/ Designer</span>
+          </div>
+          <div class = "navbox"><!-- ========== Nav Unorder List ========== -->
+            <ul class = "navul">
+              <li class = "liis"><a href = "#" class = "ahrs">Home</a></li>
+              <li class = "liis"><a href = "#" class = "ahrs">Resume</a></li>
+              <li class = "liis"><a href = "#" class = "ahrs">Project</a></li>
+              <li class = "liis"><a href = "#" class = "ahrs">Contact</a></li>
+            </ul>
+          </div>
+          <div class = "mfabars abs"><!-- ========== Nav Fa Bars ========== -->
+            <i class = "fas fa-bars fabars0" onclick = "clickbars()"></i>
+          </div>
+        </div>
+        <div class = "p1room2 p1rooms rel border"><!-- /////=====/////====///// Room 02 /////=====/////====///// -->
+          
+        </div>
+        <div class = "p1room3 p1rooms rel"><!-- /////=====/////====///// Room 03 /////=====/////====///// -->
+          <div class = "inrfooter">
+            <div class = "footp1 footps rel"><!-- ========== Footer Phone Number ========== -->
+              <i class="fas fa-phone-alt footericon"></i>
+              <span class = "abs">Call<br/>+977 9818863189</span>
+            </div>
+            <div class = "footp2 footps rel"><!-- ========== Footer Contact Email ========== -->
+              <i class="far fa-envelope footericon"></i>
+              <span class = "abs">Contact<br/>herethapamagar@gmail.com</span>
+            </div>
+            <div class = "footp3 footps rel"><!-- ========== Footer Social Media Link   ========== -->
+              <i class="far fa-user-circle footericon"></i>
+              <span class = "abs">Follow me<br/>
+                <a href = "#" class = "iconlink"><i class="fab fa-facebook-f inriconlink"></i></a>
+                <a href = "#" class = "iconlink"><i class="fab fa-instagram inriconlink"></i></a>
+                <a href = "#" class = "iconlink"><i class="fab fa-github inriconlink"></i></a>
+              </span>
+            </div>
+            <div class = "footp4 footps rel"><!-- ========== Footer It belongs to Kritesh Thapa Magar ========== -->
+              <i class="far fa-copyright footericon"></i>
+              <span class = "abs">Copyright &copy Kritesh Thapa. All rights reserved.</span>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      var responsnav0x = document.querySelector(".responsnav");
+      function clickbars(){$(responsnav0x).toggle("fade",400);}
+      function clicktimes(){$(responsnav0x).toggle("fade",400);}
+      /*
+      https://www.wix.com/website-template/view/html/1676?siteId=a2b2ea31-fa89-4af6-
+      839a-0152c05a239e&metaSiteId=25696c7e-f948-43cc-a307-463d74bcc52d&originUrl=https
+      %3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv&tpClick=view_button
+      */
+    </script>
+  </body>
+</html>
